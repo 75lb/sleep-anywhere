@@ -7,7 +7,7 @@
 
 # sleep-anywhere
 
-An async sleep function for use with any module loader (CommonJS, AMD, ECMAScript Modules).
+An asynchronous sleep function for use with any module loader (CommonJS, AMD, ECMAScript Modules).
 
 * * *
 
