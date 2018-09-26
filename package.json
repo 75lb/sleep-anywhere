@@ -1,7 +1,7 @@
 {
   "name": "sleep-anywhere",
   "author": "Lloyd Brookes <75pound@gmail.com>",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "An asynchronous sleep function for use with any module loader",
   "main": "dist/index.js",
   "repository": "https://github.com/75lb/sleep-anywhere",
