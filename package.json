@@ -11,14 +11,18 @@
   ],
   "license": "MIT",
   "engines": {
-    "node": ">=4"
+    "node": ">=8"
   },
+  "files": [
+    "index.mjs",
+    "dist/index.js"
+  ],
   "scripts": {
-    "test": "test-runner test/*.js",
+    "test": "node --experimental-modules test.mjs && node test.js",
     "dist": "rollup -c dist/index.config.js"
   },
   "devDependencies": {
-    "rollup": "^0.66.2",
-    "test-runner": "^0.5.0"
+    "rollup": "^0.66.6",
+    "test-runner": "^0.5.1"
   }
 }
