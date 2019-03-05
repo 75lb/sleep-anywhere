@@ -1,7 +1,7 @@
 [![view on npm](https://img.shields.io/npm/v/sleep-anywhere.svg)](https://www.npmjs.org/package/sleep-anywhere)
 [![npm module downloads](https://img.shields.io/npm/dt/sleep-anywhere.svg)](https://www.npmjs.org/package/sleep-anywhere)
 [![Build Status](https://travis-ci.org/75lb/sleep-anywhere.svg?branch=master)](https://travis-ci.org/75lb/sleep-anywhere)
-[![Dependency Status](https://david-dm.org/75lb/sleep-anywhere.svg)](https://david-dm.org/75lb/sleep-anywhere)
+[![Dependency Status](https://badgen.net/david/dep/75lb/sleep-anywhere)](https://david-dm.org/75lb/sleep-anywhere)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](https://github.com/feross/standard)
 
 # sleep-anywhere
@@ -40,4 +40,4 @@ console.log('5s later')
 
 * * *
 
-&copy; 2018 Lloyd Brookes \<75pound@gmail.com\>.
+&copy; 2018-19 Lloyd Brookes \<75pound@gmail.com\>.
