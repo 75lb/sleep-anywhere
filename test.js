@@ -1,10 +1,10 @@
-const TestRunner = require('test-runner')
+const Tom = require('test-runner').Tom
 const a = require('assert')
 const sleep = require('./')
 
-const runner = new TestRunner()
+const tom = module.exports = new Tom('sleep-anywhere')
 
-runner.test('simple', async function () {
+tom.test('simple', async function () {
   const before = Date.now()
   const result = await sleep(1000, 1)
   const after = Date.now()

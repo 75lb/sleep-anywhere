@@ -6,36 +6,43 @@
 
 # sleep-anywhere
 
-An asynchronous sleep function for use with any module loader (CommonJS, AMD, ECMAScript Modules).
+A sleep function you can use anywhere.
 
 ## Synopsis
 
-Install the module.
-
-```
-$ npm install sleep-anywhere
-```
-
-Load as a native ECMAScript module from the browser or node.
 ```js
-import sleep from './node_modules/sleep-anywhere/index.mjs'
+const sleep = require('sleep-anywhere')
+
+await sleep(5000)
+console.log('5s later')
 ```
 
-Load as a CommonJS module.
+## Load anywhere
+
+This library can be loaded anywhere, natively without transpilation.
+
+Node.js:
+
 ```js
 const sleep = require('sleep-anywhere')
 ```
 
-Load as a global function from the browser.
-```html
-<script src="./node_modules/sleep-anywhere/dist/index.js"></script>
-```
-
-To use the function, supply a sleep period in milliseconds. The function returns a promise which resolves after the specified period.
+Within Node.js with ECMAScript Module support enabled:
 
 ```js
-await sleep(5000)
-console.log('5s later')
+import sleep from 'sleep-anywhere'
+```
+
+Within a modern browser ECMAScript Module:
+
+```js
+import sleep from './node_modules/sleep-anywhere/index.mjs'
+```
+
+Old browser (adds `window.sleep`):
+
+```html
+<script nomodule src="./node_modules/sleep-anywhere/dist/index.js"></script>
 ```
 
 * * *

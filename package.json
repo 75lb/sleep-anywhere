@@ -2,7 +2,7 @@
   "name": "sleep-anywhere",
   "author": "Lloyd Brookes <75pound@gmail.com>",
   "version": "1.1.0",
-  "description": "An asynchronous sleep function for use with any module loader",
+  "description": "A sleep function you can use anywhere",
   "main": "dist/index.js",
   "repository": "https://github.com/75lb/sleep-anywhere",
   "keywords": [
@@ -18,11 +18,11 @@
     "dist/index.js"
   ],
   "scripts": {
-    "test": "npm run dist && node --experimental-modules test.mjs && node test.js",
+    "test": "npm run dist && node --experimental-modules test.mjs && test-runner test.js",
     "dist": "rollup -c dist/index.config.js"
   },
   "devDependencies": {
-    "rollup": "^1.4.1",
-    "test-runner": "^0.5.1"
+    "rollup": "^1.7.3",
+    "test-runner": "^0.6.0-14"
   }
 }
