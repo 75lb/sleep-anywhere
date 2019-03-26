@@ -27,12 +27,12 @@ Returns a promise which fulfils after `ms` milliseconds with the supplied `retur
 | Param | Type | Description |
 | --- | --- | --- |
 | ms | <code>number</code> | How long in milliseconds to sleep for. |
-| [returnValue] | <code>\*</code> | The value the return |
+| [returnValue] | <code>\*</code> | The value to return. |
 
 
 ### Load anywhere
 
-This library can be loaded anywhere, natively without transpilation.
+This library is compatible with Node.js, the Web and any style of module loader. It can be loaded anywhere, natively without transpilation.
 
 Node.js:
 
