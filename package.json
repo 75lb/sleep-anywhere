@@ -19,9 +19,11 @@
   ],
   "scripts": {
     "test": "npm run dist && node --experimental-modules test.mjs && test-runner test.js",
-    "dist": "rollup -c dist/index.config.js"
+    "dist": "rollup -c dist/index.config.js",
+    "docs": "jsdoc2md -c jsdoc.conf index.mjs  -t README.hbs > README.md"
   },
   "devDependencies": {
+    "jsdoc-to-markdown": "^4.0.1",
     "rollup": "^1.7.3",
     "test-runner": "^0.6.0-14"
   }
