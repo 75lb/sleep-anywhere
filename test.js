@@ -2,7 +2,7 @@ const Tom = require('test-runner').Tom
 const a = require('assert')
 const sleep = require('./')
 
-const tom = module.exports = new Tom('sleep-anywhere')
+const tom = module.exports = new Tom()
 
 tom.test('simple', async function () {
   const before = Date.now()
