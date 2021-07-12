@@ -3,28 +3,31 @@
   "author": "Lloyd Brookes <75pound@gmail.com>",
   "version": "1.1.3",
   "description": "A sleep function you can use anywhere",
-  "main": "dist/index.js",
   "repository": "https://github.com/75lb/sleep-anywhere",
   "keywords": [
     "sleep",
     "wait"
   ],
   "license": "MIT",
+  "exports": {
+    "import": "./index.mjs",
+    "require": "./dist/index.cjs"
+  },
   "engines": {
-    "node": ">=8"
+    "node": ">=14"
   },
   "files": [
     "index.mjs",
-    "dist/index.js"
+    "dist"
   ],
   "scripts": {
-    "test": "npm run dist && node --experimental-modules test.mjs && test-runner test.js",
+    "test": "npm run dist && test-runner test.mjs",
     "docs": "jsdoc2md -c jsdoc.conf index.mjs -t README.hbs > README.md",
-    "dist": "rollup -f umd -n sleep -o dist/index.js index.mjs"
+    "dist": "rollup -c"
   },
   "devDependencies": {
-    "jsdoc-to-markdown": "^5.0.2",
-    "rollup": "^1.26.3",
-    "test-runner": "^0.7.2"
+    "jsdoc-to-markdown": "^7.0.1",
+    "rollup": "^2.53.1",
+    "test-runner": "^0.9.6"
   }
 }

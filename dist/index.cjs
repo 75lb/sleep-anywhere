@@ -1,3 +1,5 @@
+'use strict';
+
 /**
  * A sleep function you can use anywhere.
  *
@@ -21,4 +23,4 @@ function sleep (ms, returnValue) {
   return new Promise(resolve => setTimeout(() => resolve(returnValue), ms))
 }
 
-export default sleep
+module.exports = sleep;

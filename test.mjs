@@ -1,16 +1,15 @@
-import sleep from './index.mjs'
-import a from 'assert'
+import TestRunner from 'test-runner'
+import { strict as a } from 'assert'
+import sleep from 'sleep-anywhere'
 
-async function start () {
+const tom = new TestRunner.Tom()
+
+tom.test('simple', async function () {
   const before = Date.now()
   const result = await sleep(1000, 1)
   const after = Date.now()
   a.ok(after - before >= 1000)
   a.strictEqual(result, 1)
-  console.log('OK')
-}
-
-start().catch(function (err) {
-	console.error(err)
-	process.exitCode = 1
 })
+
+export default tom
