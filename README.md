@@ -50,7 +50,7 @@ import sleep from 'sleep-anywhere'
 Within a modern browser ECMAScript Module:
 
 ```js
-import sleep from './node_modules/sleep-anywhere/index.mjs'
+import sleep from './node_modules/sleep-anywhere/index.js'
 ```
 
 * * *
