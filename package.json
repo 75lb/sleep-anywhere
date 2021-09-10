@@ -9,25 +9,27 @@
     "wait"
   ],
   "license": "MIT",
+  "type": "module",
   "exports": {
-    "import": "./index.mjs",
+    "import": "./index.js",
     "require": "./dist/index.cjs"
   },
   "engines": {
-    "node": ">=14"
+    "node": ">=12.17"
   },
   "files": [
-    "index.mjs",
+    "index.js",
     "dist"
   ],
   "scripts": {
-    "test": "npm run dist && test-runner test.mjs",
-    "docs": "jsdoc2md -c jsdoc.conf index.mjs -t README.hbs > README.md",
+    "test": "npm run dist && npm run test:ci",
+    "test:ci": "test-runner test.js",
+    "docs": "jsdoc2md index.js -t README.hbs > README.md",
     "dist": "rollup -c"
   },
   "devDependencies": {
     "jsdoc-to-markdown": "^7.0.1",
-    "rollup": "^2.53.1",
-    "test-runner": "^0.9.6"
+    "rollup": "^2.56.3",
+    "test-runner": "^0.9.8"
   }
 }
