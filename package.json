@@ -1,7 +1,7 @@
 {
   "name": "sleep-anywhere",
   "author": "Lloyd Brookes <75pound@gmail.com>",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "A sleep function you can use anywhere",
   "repository": "https://github.com/75lb/sleep-anywhere",
   "keywords": [
