@@ -1,7 +1,7 @@
 /**
  * An isomorphic sleep function you can use anywhere. Only required in the browser or isomorphic code - if your code runs on NodeJs only use this instead:
  *
- * ```
+ * ```js
  * import { setTimeout as sleep } from 'node:timers/promises'
  * ```
  *

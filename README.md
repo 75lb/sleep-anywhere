@@ -10,7 +10,7 @@
 ## sleep-anywhere
 An isomorphic sleep function you can use anywhere. Only required in the browser or isomorphic code - if your code runs on NodeJs only use this instead:
 
-```
+```js
 import { setTimeout as sleep } from 'node:timers/promises'
 ```
 
@@ -59,4 +59,4 @@ import sleep from './node_modules/sleep-anywhere/index.js'
 
 * * *
 
-&copy; 2018-22 Lloyd Brookes \<75pound@gmail.com\>.
+&copy; 2018-24 Lloyd Brookes \<75pound@gmail.com\>.
