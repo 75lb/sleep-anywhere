@@ -22,14 +22,11 @@
     "dist"
   ],
   "scripts": {
-    "test": "npm run dist && npm run test:ci",
-    "test:ci": "test-runner test.js",
-    "docs": "jsdoc2md index.js -t README.hbs > README.md",
-    "dist": "rollup -c"
+    "test": "test-runner test.js",
+    "docs": "jsdoc2md index.js -t README.hbs > README.md"
   },
   "devDependencies": {
-    "jsdoc-to-markdown": "^7.1.1",
-    "rollup": "^2.70.2",
-    "test-runner": "^0.10.1"
+    "jsdoc-to-markdown": "^8.0.3",
+    "test-runner": "^0.12.0-2"
   }
 }

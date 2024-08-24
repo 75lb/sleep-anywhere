@@ -1,10 +1,9 @@
-import TestRunner from 'test-runner'
 import { strict as a } from 'assert'
 import sleep from 'sleep-anywhere'
 
-const tom = new TestRunner.Tom()
+const [test, only, skip] = [new Map(), new Map(), new Map()]
 
-tom.test('simple', async function () {
+test.set('simple', async function () {
   const before = Date.now()
   const result = await sleep(1000, 1)
   const after = Date.now()
@@ -12,4 +11,4 @@ tom.test('simple', async function () {
   a.strictEqual(result, 1)
 })
 
-export default tom
+export { test, only, skip }

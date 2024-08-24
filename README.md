@@ -8,7 +8,11 @@
 <a name="module_sleep-anywhere"></a>
 
 ## sleep-anywhere
-A sleep function you can use anywhere.
+An isomorphic sleep function you can use anywhere. Only required in the browser or isomorphic code - if your code runs on NodeJs only use this instead:
+
+```
+import { setTimeout as sleep } from 'node:timers/promises'
+```
 
 **Example**  
 ```js
